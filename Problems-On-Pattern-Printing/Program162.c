@@ -1,0 +1,38 @@
+// Row 4 col 4
+/*
+    a    b    c    d
+    e    f    g    h
+    i    j    k    l
+    m    n    o    p
+*/
+
+void PatternPrinter(int iRow, int iCol)
+{
+    int i = 0, j = 0;
+    char ch = 'a';
+    
+    for(i = 1; i <= iRow; i++)
+    {
+        for(j = 1; j <= iCol; j++,ch++)
+        {
+            printf("%c\t",ch);
+        }
+        printf("\n");
+    }
+}
+
+#include<stdio.h>
+
+int main()
+{
+    int iValue1 = 0, iValue2 = 0;
+    
+    printf("Enter Number Of Rows : ");
+    scanf("%d",&iValue1);
+    printf("Enter Number Of Columns : ");
+    scanf("%d",&iValue2);
+    
+    PatternPrinter(iValue1,iValue2);
+
+    return 0;
+}
